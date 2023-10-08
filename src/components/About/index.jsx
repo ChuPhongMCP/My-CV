@@ -114,15 +114,30 @@ function About() {
       <div className="row">
         <div className="col-12">
           <div className="cover_group_icon">
-            <a className="link_github" href="https://github.com/ChuPhongMCP">
+            <a
+              className="link_github"
+              href="https://github.com/ChuPhongMCP"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHubDefault />
             </a>
 
-            <a className="link_fb" href="https://www.facebook.com/m2nda1c2">
+            <a
+              className="link_fb"
+              href="https://www.facebook.com/m2nda1c2"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Facebook />
             </a>
 
-            <a className="link_fb" href="https://zalo.me/0901942151">
+            <a
+              className="link_fb"
+              href="https://zalo.me/0901942151"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Zalo />
             </a>
           </div>
