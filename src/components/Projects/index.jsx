@@ -109,7 +109,7 @@ function Projects() {
             <a
               className="link_demo_project"
               target="_blank"
-              href="https://github.com/ChuPhongMCP/E-CRUD-ReactJS-NodeJS"
+              href="https://github.com/ChuPhongMCP/My-CV"
               rel="noreferrer"
             >
               source code
