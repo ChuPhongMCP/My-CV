@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.my_name {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem !important;
+  font-size: 6rem;
+  line-height: 7.5rem;
+  font-family: 'Saira Extra Condensed';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+.first_name {
+  color: #079992 !important;
+  font-size: 6rem;
+  line-height: 7.5rem;
+  font-family: 'Saira Extra Condensed';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.first_name:hover {
+  color: #fd7e14 !important;
+}
+
+.major {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed';
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed';
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.cover_map_icon {
+  margin-top: -1px;
+  height: fit-content;
+}
+
+.email_address {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed';
+  font-size: 1.5rem;
+  color: #079992 !important;
+}
+
+.link_email_address:link,
+.link_email_address:visited {
+  text-decoration: none;
+  color: #079992 !important;
+}
+
+.link_email_address:hover,
+.link_email_address:active {
+  text-decoration: underline;
+  color: #fd7e14 !important;
+}
+
+.welcome {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 30px !important;
+  margin-top: 0;
+  padding-top: 54px;
+  color: #34495e;
+  font-family: 'Mulish', sans-serif;
+}
+
+.cover_backend {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.cover_nodejs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-top: 0;
+}
+
+.backend {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem !important;
+  margin-top: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+.strong {
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-family: 'Mulish', sans-serif;
+  color: #34495e;
+}
+
+.cover_frontend {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.cover_group_icon {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.hr_about {
+  margin-top: 3rem;
+}
