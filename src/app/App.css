@@ -1,9 +1,13 @@
-.cover_content {
-  margin-left: 240px;
+.content {
+  margin-left: 19rem;
+  margin-right: 2rem;
+  max-width: 1080px;
 }
 
 @media (max-width: 991px) {
-  .cover_content {
-    margin-left: 10px;
+  .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
   }
 }

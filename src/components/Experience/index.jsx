@@ -1,9 +1,15 @@
+/* eslint-disable react/prop-types */
 import Bookmark from 'svg/Bookmark'
 import './exp.css'
 
-function Experience() {
+function Experience(props) {
+  const { onMouseEnter } = props
+
   return (
-    <>
+    <div
+      id="experience"
+      onMouseEnter={() => onMouseEnter()}
+    >
       <div className="row">
         <div className="col-12">
           <h2 className="experience">experience</h2>
@@ -37,7 +43,7 @@ function Experience() {
           <hr className="hr_exp" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

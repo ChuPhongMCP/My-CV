@@ -1,10 +1,16 @@
+/* eslint-disable react/prop-types */
 import './projects.css'
 import Trophy from 'svg/Trophy'
 import SVGUser from 'svg/User'
 
-function Projects() {
+function Projects(props) {
+  const { onMouseEnter } = props
+
   return (
-    <>
+    <div
+      id="projects"
+      onMouseEnter={() => onMouseEnter()}
+    >
       <div className="row">
         <div className="col-12">
           <h2 className="experience">Projects</h2>
@@ -123,7 +129,7 @@ function Projects() {
           <hr className="hr_exp" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

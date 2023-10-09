@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 import { useCallback, useState } from 'react'
 
 import './skill.css'
-import listSkill from './listSkill'
+import listSkill from 'constants/listSkill/index'
 
-function Skill() {
+function Skill(props) {
+  const { onMouseEnter } = props
+
   const [curentItem, setCurentItem] = useState('')
 
   const handleMouseEnter = useCallback((event, name) => {
@@ -17,7 +20,10 @@ function Skill() {
   }, [])
 
   return (
-    <>
+    <div
+      id="skill"
+      onMouseEnter={() => onMouseEnter()}
+    >
       <div className="row">
         <div className="col-12">
           <h2 className="experience">Skill</h2>
@@ -61,7 +67,7 @@ function Skill() {
           <hr className="hr_exp" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

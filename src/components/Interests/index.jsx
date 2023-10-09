@@ -1,9 +1,15 @@
+/* eslint-disable react/prop-types */
 import './interests.css'
 import SwiperMotorcycles from './swiperMotorcycles'
 
-function Interests() {
+function Interests(props) {
+  const { onMouseEnter } = props
+
   return (
-    <>
+    <div
+      id="interests"
+      onMouseEnter={() => onMouseEnter()}
+    >
       <div className="row">
         <div className="col-12">
           <h2 className="experience">Interests</h2>
@@ -34,7 +40,7 @@ function Interests() {
           <hr className="hr_exp" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
