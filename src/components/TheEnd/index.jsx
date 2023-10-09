@@ -1,9 +1,15 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import './theEnd.css'
 
-function TheEnd() {
+function TheEnd(props) {
+  const { onMouseEnter } = props
+
   return (
-    <>
+    <div
+      id="the_end"
+      onMouseEnter={() => onMouseEnter()}
+    >
       <div className="row">
         <div className="col-12">
           <h2 className="experience">The End</h2>
@@ -23,7 +29,7 @@ function TheEnd() {
       <div className="row">
         <div className="col-12">
           <div className="exp_des">
-            and now, can you ride large displacement motorcycles with me?
+            And now, do you want to drive large displacement motorcycles with me?
           </div>
         </div>
       </div>
@@ -31,7 +37,11 @@ function TheEnd() {
       <div className="row">
         <div className="col-12">
           <div className="cover_ride_motorcycles">
-            <img className='gif_ride_motorcycles' src={require('assets/motorcycles/giphy.gif')} alt='...' />
+            <img
+              className="gif_ride_motorcycles"
+              src={require('assets/motorcycles/giphy.gif')}
+              alt="..."
+            />
           </div>
         </div>
       </div>
@@ -41,7 +51,7 @@ function TheEnd() {
           <hr className="hr_exp" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

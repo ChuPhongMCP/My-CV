@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Map from 'svg/Map'
 import './about.css'
 import AddressCard from 'svg/FAAddress'
@@ -9,9 +10,11 @@ import GitHubDefault from 'svg/Github'
 import Facebook from 'svg/Facebook'
 import Zalo from 'svg/Zalo'
 
-function About() {
+function About(props) {
+  const { onMouseEnter } = props
+
   return (
-    <>
+    <div id="about" onMouseEnter={() => onMouseEnter()}>
       <div className="row">
         <div className="col-12">
           <h1 className="my_name">
@@ -149,7 +152,7 @@ function About() {
           <hr className="hr_about" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

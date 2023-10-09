@@ -1,9 +1,15 @@
+/* eslint-disable react/prop-types */
 import Bookmark from 'svg/Bookmark'
 import './edu.css'
 
-function Education() {
+function Education(props) {
+  const { onMouseEnter } = props
+
   return (
-    <>
+    <div
+      id="education"
+      onMouseEnter={() => onMouseEnter()}
+    >
       <div className="row">
         <div className="col-12">
           <h2 className="experience">education</h2>
@@ -73,8 +79,8 @@ function Education() {
 
           <div className="exp_des">
             <Bookmark />I graduated with a teamwork project to build an
-            <strong className="strong_exp_des"> e-commerce website</strong> using
-            the technologies learned here
+            <strong className="strong_exp_des"> e-commerce website</strong>{' '}
+            using the technologies learned here
           </div>
         </div>
 
@@ -88,7 +94,7 @@ function Education() {
           <hr className="hr_exp" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

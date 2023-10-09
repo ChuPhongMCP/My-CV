@@ -1,29 +1,37 @@
+import { useCallback, useEffect, useState } from 'react'
+
 import './App.css'
-import About from 'components/About'
-import Education from 'components/Education'
-import Experience from 'components/Experience'
-import Interests from 'components/Interests'
-import Projects from 'components/Projects'
-import Skill from 'components/Skill'
-import TheEnd from 'components/TheEnd'
+import NavBar from 'components/navBar'
+import listComponent from 'constants/listComponent/index'
 
 function App() {
+  useEffect(() => {
+    // Scroll to the top when the component is mounted
+    window.scrollTo(0, 0)
+  }, [])
+
+  const [hoveredComponentId, setHoveredComponentId] = useState('#about')
+
+  const renderComponents = useCallback(() => {
+    const render = listComponent.map((item, index) => {
+      return (
+        <div key={index}>
+          <item.name
+            onMouseEnter={() => setHoveredComponentId(item.id)}
+          />
+        </div>
+      )
+    })
+
+    return render
+  }, [])
+
   return (
-    <div className="container">
-      <div className='cover_content'>
-        <About />
+    <div className="container-fluid">
+      <div className='content'>
+        <NavBar hoveredComponentId={hoveredComponentId} />
 
-        <Experience />
-
-        <Education />
-
-        <Skill />
-
-        <Projects />
-
-        <Interests />
-
-        <TheEnd />
+        {renderComponents()}
       </div>
     </div>
   )
