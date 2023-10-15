@@ -1,15 +1,23 @@
-.nav_bar {
+.cover_nav {
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
+  width: 17rem;
+  height: 100vh;
+  background-color: white !important;
+  z-index: 1030;
+}
+
+.nav_bar {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 17rem;
   height: 100vh;
-  background-color: #38ada9 !important;
+  background-color: #38ada9;
   z-index: 1030;
 }
 
@@ -44,7 +52,6 @@
 }
 
 .cover_show_avatar_hiden {
-  /* display: none; */
   cursor: pointer;
   position: fixed;
   top: 0;
@@ -65,22 +72,21 @@
 .show_avatar {
   display: block;
   width: 30%;
-  transition: width 0.5s ease;
+  transition: width 0.5s linear;
 }
 
-.nav_bar_extend {
-  position: relative;
+.cover_nav_extend {
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   display: block;
   width: 100vw;
-  height: 35rem;
-  background-color: #38ada9 !important;
+  max-height: 70rem;
+  background-color: rgba(255, 255, 255, 0) !important;
   z-index: 1030;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: max-height 0.3s linear;
 }
 
 .btn_menu {
@@ -98,18 +104,27 @@
 }
 
 @media (max-width: 991px) {
-  .nav_bar {
+  .cover_nav {
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    max-height: 3.5rem;
+    background-color: rgba(255, 255, 255, 0) !important;
+    z-index: 1030;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+  }
+
+  .nav_bar {
+    text-align: center;
     display: block;
     width: 100vw;
-    height: 3.5rem;
+    height: fit-content;
     background-color: #38ada9 !important;
     z-index: 1030;
     overflow: hidden;
-    transition: height 0.3s ease;
   }
 
   .nav_bar_name {
@@ -162,13 +177,13 @@
     margin-right: auto !important;
     margin-bottom: 0.5rem !important;
     border-radius: 50% !important;
-    transition: height 0.5s ease;
+    transition: height 0.5s linear;
   }
 
   .show_avatar {
     display: block;
     width: 50%;
-    transition: width 0.5s ease;
+    transition: width 0.5s linear;
   }
 
   .nav_li_menu {

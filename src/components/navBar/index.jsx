@@ -50,38 +50,40 @@ function NavBar(props) {
   }, [])
 
   return (
-    <nav className={isExtend ? 'nav_bar_extend' : 'nav_bar'}>
-      <div className="nav_bar_name">Nguyễn Ngọc Mẫn</div>
+    <div className={isExtend ? 'cover_nav_extend' : 'cover_nav'}>
+      <nav className='nav_bar'>
+        <div className="nav_bar_name">Nguyễn Ngọc Mẫn</div>
 
-      <div onClick={handleClickAvatar} className="cover_avatar">
-        <img
-          className="avatar"
-          src={require('assets/avatar/avatar.jpg')}
-          alt="..."
-        />
-      </div>
+        <div onClick={handleClickAvatar} className="cover_avatar">
+          <img
+            className="avatar"
+            src={require('assets/avatar/avatar.jpg')}
+            alt="..."
+          />
+        </div>
 
-      <div className="cover_menu">
-        <ul className="nav_ul">{renderLi()}</ul>
-      </div>
+        <div className="cover_menu">
+          <ul className="nav_ul">{renderLi()}</ul>
+        </div>
 
-      <button onClick={handleClickMenu} className="btn_menu">
-        <Menu />
-      </button>
+        <button onClick={handleClickMenu} className="btn_menu">
+          <Menu />
+        </button>
 
-      <div
-        className={
-          isShowAvatar ? 'cover_show_avatar' : 'cover_show_avatar_hiden'
-        }
-        onClick={handleClickAvatar}
-      >
-        <img
-          className={isShowAvatar ? 'show_avatar' : 'show_avatar_hiden'}
-          src={require('assets/avatar/avatar.jpg')}
-          alt="..."
-        />
-      </div>
-    </nav>
+        <div
+          className={
+            isShowAvatar ? 'cover_show_avatar' : 'cover_show_avatar_hiden'
+          }
+          onClick={handleClickAvatar}
+        >
+          <img
+            className={isShowAvatar ? 'show_avatar' : 'show_avatar_hiden'}
+            src={require('assets/avatar/avatar.jpg')}
+            alt="..."
+          />
+        </div>
+      </nav>
+    </div>
   )
 }
 

@@ -72,10 +72,6 @@ export default function SwiperMotorcycles() {
     return render
   }, [handleClickImg])
 
-  // useEffect(() => {
-  // console.log('««««« currentImg »»»»»', currentImg)
-  // }, [currentImg])
-
   return (
     <div
       onMouseEnter={handleMouseEnter}
@@ -101,7 +97,6 @@ export default function SwiperMotorcycles() {
           delay: 2000,
           disableOnInteraction: false
         }}
-        // loop={true}
         spaceBetween={0}
         navigation={false}
         thumbs={{
@@ -109,28 +104,11 @@ export default function SwiperMotorcycles() {
         }}
         modules={[Autoplay, Thumbs]}
         className="mySwiper2"
-        // onClick={handleClickImg}
       >
         {renderSwiper()}
-        {/* <SwiperSlide>
-          <img src={require('assets/motorcycles/gsxR1000.jpg')} alt="..." />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={require('assets/motorcycles/gsxS1000.webp')} alt="..." />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={require('assets/motorcycles/r1.jpg')} alt="..." />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={require('assets/motorcycles/z900.jpg')} alt="..." />
-        </SwiperSlide> */}
       </Swiper>
 
       <Swiper
-        // loop={true}
         onSwiper={setThumbsSwiper}
         spaceBetween={3}
         slidesPerView={4}
@@ -138,7 +116,6 @@ export default function SwiperMotorcycles() {
         watchSlidesProgress={true}
         modules={[Autoplay, Thumbs]}
         className="mySwiper"
-        // direction="vertical"
       >
         <SwiperSlide>
           <img src={require('assets/motorcycles/gsxR1000.jpg')} alt="..." />
