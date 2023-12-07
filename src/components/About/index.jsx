@@ -57,7 +57,10 @@ function About(props) {
         <div className="col-12">
           <div className="email_address">
             <Email /> ·
-            <a className="link_email_address" href="">
+            <a
+              className="link_email_address"
+              href="mailto:man.nguyen.cit@gmail.com"
+            >
               man.nguyen.cit@gmail.com
             </a>
           </div>
@@ -66,7 +69,7 @@ function About(props) {
 
       <div className="row">
         <div className="col-12">
-          <p className="welcome">Welcome to visit my CV online!</p>
+          <p className="welcome">Welcome to visit my CV profile online!</p>
         </div>
       </div>
 
@@ -83,9 +86,15 @@ function About(props) {
                 {' '}
                 Javascript, MongoDB, SQL Server,
               </strong>{' '}
-              on <strong className="strong">Node.JS </strong>platform.
+              on{' '}
+              <strong className="strong">
+                Node.JS (Express-app, Nodemon, Mongoose SchemaTypes, Mongoose
+                Built-in Validators, Mongoose Model, Mongoose Virtuals, Virtuals
+                with Lean, CRUD With Mongoose, Query with Mongoose, Query
+                Selectors, Yup, JWT, Passport, Postman, Multer, S3 Service).{' '}
+              </strong>
               Experience in using
-              <strong className="strong"> Onrender, Firebase, Vercel</strong>
+              <strong className="strong"> Onrender, Firebase, Vercel.</strong>
             </p>
           </div>
         </div>
@@ -102,12 +111,16 @@ function About(props) {
               <strong className="strong">Front-End: </strong>I am experienced in
               <strong className="strong">
                 {' '}
-                Javascript on ReactJS & NextJS (Redux, Saga, Axios, ...etc)
+                Javascript on ReactJS (Event, Components, React-hook-form,
+                Formik, Yup, Fetch, Axios Interceptor, React Hook,
+                React-router-dom, Redux, Saga, Zustand) & NextJS (Page Router,
+                App Router, Routing, Data Fetching, CSR, SSR, ISR, Components,
+                Functions, Next Auth, Zustand, Eslint, Eslint-config-airbnb).
               </strong>{' '}
               Experience in using
               <strong className="strong">
                 {' '}
-                Bootstrap, Ant Design, Material UI
+                Bootstrap, Ant Design, Material UI, Tailwind.
               </strong>
             </p>
           </div>

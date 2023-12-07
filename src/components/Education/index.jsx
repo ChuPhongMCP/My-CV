@@ -48,7 +48,7 @@ function Education(props) {
         </div>
 
         <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-lx-4">
-          <div className="exp_time">Sep 2012 - May 2015</div>
+          <div className="exp_time"> </div>
         </div>
       </div>
 
@@ -85,7 +85,7 @@ function Education(props) {
         </div>
 
         <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-lx-4">
-          <div className="study_time">Mar 2023 - Oct 2023</div>
+          <div className="study_time"> </div>
         </div>
       </div>
 

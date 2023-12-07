@@ -11,3 +11,10 @@
     margin-top: 5rem;
   }
 }
+
+.ant-notification-notice-message {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  color: #34495e !important;
+}

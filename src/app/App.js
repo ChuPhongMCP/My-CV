@@ -1,10 +1,27 @@
 import { useCallback, useEffect, useState } from 'react'
+import { notification } from 'antd'
 
 import './App.css'
 import NavBar from 'components/navBar'
 import listComponent from 'constants/listComponent/index'
 
 function App() {
+  const [api, contextHolder] = notification.useNotification()
+
+  useEffect(() => {
+    const openNotification = () => {
+      api.open({
+        message: 'Hello! Have a nice day, Thank you for visiting my CV profile online!',
+        description:
+          '',
+        duration: 5,
+        className: 'notification'
+      })
+    }
+
+    openNotification()
+  }, [api])
+
   useEffect(() => {
     // Scroll to the top when the component is mounted
     window.scrollTo(0, 0)
@@ -27,13 +44,17 @@ function App() {
   }, [])
 
   return (
-    <div className="container-fluid">
-      <div className='content'>
-        <NavBar hoveredComponentId={hoveredComponentId} />
+    <>
+      {contextHolder}
 
-        {renderComponents()}
+      <div className="container-fluid">
+        <div className='content'>
+          <NavBar hoveredComponentId={hoveredComponentId} />
+
+          {renderComponents()}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

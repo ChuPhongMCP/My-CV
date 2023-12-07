@@ -14,6 +14,7 @@ function NavBar(props) {
 
   const handleClickItem = useCallback((event) => {
     setCurrentItem(event.target.id)
+    setIsExtend(false)
   }, [])
 
   useEffect(() => {
@@ -51,7 +52,7 @@ function NavBar(props) {
 
   return (
     <div className={isExtend ? 'cover_nav_extend' : 'cover_nav'}>
-      <nav className='nav_bar'>
+      <nav className="nav_bar">
         <div className="nav_bar_name">Nguyễn Ngọc Mẫn</div>
 
         <div onClick={handleClickAvatar} className="cover_avatar">

@@ -9,8 +9,10 @@ import SkillGithub from 'svg/SkillGithub'
 import SkillBootstrap from 'svg/SkillBoostrap'
 import SkillNextJS from 'svg/SkillNextJS'
 import SkillPostman from 'svg/SkillPostman'
-import SkillNPM from 'svg/SkillNPM'
-import SkillYarn from 'svg/SkillYarn'
+import SkillTailwind from 'svg/SkillTailwind'
+
+// import SkillNPM from 'svg/SkillNPM'
+// import SkillYarn from 'svg/SkillYarn'
 
 const listSkill = [
   {
@@ -46,6 +48,10 @@ const listSkill = [
     'name': 'CSS 3'
   },
   {
+    'Component': SkillTailwind,
+    'name': 'Tailwind'
+  },
+  {
     'Component': SkillBootstrap,
     'name': 'Bootstrap'
   },
@@ -56,14 +62,6 @@ const listSkill = [
   {
     'Component': SkillPostman,
     'name': 'Postman'
-  },
-  {
-    'Component': SkillNPM,
-    'name': 'npm'
-  },
-  {
-    'Component': SkillYarn,
-    'name': 'yarn'
   }
 ]
 
