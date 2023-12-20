@@ -26,7 +26,7 @@ function About(props) {
       <div className="row">
         <div className="col-12">
           <div className="major">
-            <AddressCard /> · fullstack developers
+            <AddressCard /> · front-end developers
           </div>
         </div>
       </div>
@@ -75,6 +75,33 @@ function About(props) {
 
       <div className="row">
         <div className="col-12">
+          <div className="cover_frontend">
+            <div className="cover_nodejs">
+              <ReactJS />
+            </div>
+
+            <p className="backend">
+              <strong className="strong">Front-End: </strong>I am experienced in
+              <strong className="strong">
+                {' '}
+                Javascript on ReactJS (Event, Components, React-hook-form,
+                Formik, Yup, Fetch, Axios Interceptor, React Hook,
+                React-router-dom, Redux, Saga, Zustand) & NextJS (Page Router,
+                App Router, Routing, Data Fetching, CSR, SSR, ISR, Components,
+                Functions, Next Auth, Zustand, Eslint, Eslint-config-airbnb).
+              </strong>{' '}
+              Experience in using
+              <strong className="strong">
+                {' '}
+                Tailwind, Bootstrap, Ant Design.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-12">
           <div className="cover_backend">
             <div className="cover_nodejs">
               <NodeJS />
@@ -95,33 +122,6 @@ function About(props) {
               </strong>
               Experience in using
               <strong className="strong"> Onrender, Firebase, Vercel.</strong>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-12">
-          <div className="cover_frontend">
-            <div className="cover_nodejs">
-              <ReactJS />
-            </div>
-
-            <p className="backend">
-              <strong className="strong">Front-End: </strong>I am experienced in
-              <strong className="strong">
-                {' '}
-                Javascript on ReactJS (Event, Components, React-hook-form,
-                Formik, Yup, Fetch, Axios Interceptor, React Hook,
-                React-router-dom, Redux, Saga, Zustand) & NextJS (Page Router,
-                App Router, Routing, Data Fetching, CSR, SSR, ISR, Components,
-                Functions, Next Auth, Zustand, Eslint, Eslint-config-airbnb).
-              </strong>{' '}
-              Experience in using
-              <strong className="strong">
-                {' '}
-                Bootstrap, Ant Design, Material UI, Tailwind.
-              </strong>
             </p>
           </div>
         </div>

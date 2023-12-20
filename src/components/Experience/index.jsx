@@ -15,7 +15,7 @@ function Experience(props) {
 
       <div className="row">
         <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-lx-8">
-          <h3 className="company_name">intern</h3>
+          <h3 className="company_name">front-end developer</h3>
 
           <div className="exp_des_title">
             Wiicamp Company |{' '}
@@ -26,24 +26,22 @@ function Experience(props) {
               target="_blank"
             >
               https://wiicamp.com/
-            </a>{' '}
-            | FULL STACK WEB DEVELOPER
+            </a>
           </div>
 
           <div className="exp_des">
             <Bookmark />
             Main project with customers:{' '}
             <strong className="strong_exp_des">
-              Responsible for develop API Back-end (NodeJS, MongoDB, ...etc),
-              Front-end (ReactJS, NextJS, Bootstrap, Ant Design, Tailwind,
-              ...etc)
+              Responsible for Front-end (ReactJS, NextJS, Bootstrap, Ant Design,
+              Tailwind, ...etc)
             </strong>{' '}
             for web app (web browsers)
           </div>
         </div>
 
         <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-lx-4">
-          <div className="exp_time">Jun 2023 - present</div>
+          <div className="exp_time">Jun 2022 - present</div>
         </div>
       </div>
 
